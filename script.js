@@ -1,6 +1,9 @@
-// Assignment code here
+//Prompts how many letters and what letter type
 
+var length = Number(prompt("How many characters will your password be? Enter a number between 8 and 35"));
 
+//ask for character type
+var letterType = prompt("Enter a which character types: special, numeric, uppercase, lowercase.");
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
