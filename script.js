@@ -1,40 +1,70 @@
-//Prompts how many letters and what letter type
+var lengthThangs = function() {
+    var promptLength = Number(prompt("How many characters will your password be? Enter a number between 8 and 128"));
+    // validate prompt answer
+    if (promptLength === "" || promptLength === null || promptLength < 8 || promptLength > 128) {
+        window.alert("You need to provide a valid answer! Please try again.");
+        // use return to call it again and stop the rest of this function from running
+        return lengthThangs();
+    }
+    return promptLength;
+}
 
-var length = Number(prompt("How many characters will your password be? Enter a number between 8 and 35"));
 
-//ask for character type
-var letterType = prompt("Enter a which character types: special, numeric, uppercase, lowercase.");
+var letterThangs = function() {
+
+    var letterType = prompt("Enter a which character types: special, numeric, uppercase, lowercase, All");
+    letterType.toLowerCase();
+    if (letterType === "lowercase") {
+        return "abcdefghijklmnopqrstuvwxyz";
+    } else if (letterType === "uppercase") {
+        return "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    } else if (letterType === "numeric") {
+        return "0123456789";
+    } else if (letterType === "special") {
+        return " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    } else if (letterType === "all") {
+        return " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    }
+    // validate prompt answer
+    else if (letterType === "" || letterType === null) {
+        window.alert("You need to provide a valid answer! Please try again.");
+        // use return to call it again and stop the rest of this function from running
+        return letterThangs();
+
+    }
+}
 
 //generate password 
 function generatePassword() {
     //evaluate character type
+    letterSet = letterThangs();
     // compare to each letter sets 
+    lengthNum = lengthThangs();
 
-    var letterSet = "";
-    var charTypeLower = letterType.toLowerCase();
-    if (letterTypeLower === "lowercase") {
-        letterSet = "abcdefghijklmnopqrstuvwxyz";
-    } else if (letterTypeLower === "uppercase") {
-        letterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    } else if (letterTypeLower === "numeric") {
-        letterSet = "0123456789";
-    } else if (letterTypeLower === "special") {
-        letterSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    //return value
+    var returnVal = "";
+    for (var i = 0; i < lengthNum; i++) {
+        //picks a character within letterSet at index of random number
+        returnVal += letterSet.charAt(Math.floor(Math.random() * letterSet.length));
     }
+    return returnVal;
 };
+
+
+generatePassword();
 
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+var password = generatePassword;
 // Write password to the #password input
 function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
-
     passwordText.value = password;
-
 }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
