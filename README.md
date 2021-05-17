@@ -11,19 +11,28 @@
  <br />
  <br />
 
-## 5 Options of secure passwords.
+## 4 Options to make a more secure password.
 
-> - Special Characters
+>  Special Characters
+<br />
+![Special characters](https://user-images.githubusercontent.com/52016382/118540984-c9ef5180-b716-11eb-8ed3-e0bf24c981cd.png)
+<br />
+<br />
+> Numeric
+<br />
+![Numeric](https://user-images.githubusercontent.com/52016382/118541028-d8d60400-b716-11eb-87c6-a61b026057a5.png)
+<br />
+<br />
+> Upper Case
+<br />
+![Uppercase](https://user-images.githubusercontent.com/52016382/118541461-513cc500-b717-11eb-8cd4-5e73db58bd23.png)
+<br />
+<br />
+> Lower Case
+<br />
+![Lowercase](https://user-images.githubusercontent.com/52016382/118541377-379b7d80-b717-11eb-97e0-10e5e77dc3b0.png)
 
-> - Numeric
 
-> - Upper Case
-
-> - Lower Case
-
-> - All
-
-![Options](https://user-images.githubusercontent.com/52016382/118507406-d1e9ca00-b6f3-11eb-91d2-81229a6238d0.png)
 _________________________________________________________________________
 <br />
 <br />
@@ -32,7 +41,7 @@ _________________________________________________________________________
 <br />
 <br />
 
-![Length Of Password](https://user-images.githubusercontent.com/52016382/118507510-e9c14e00-b6f3-11eb-9814-49a00db3b852.png)
+![Choose length of password](https://user-images.githubusercontent.com/52016382/118540898-b0e6a080-b716-11eb-83cc-63536cf71a50.png)
 
 <br />
 <br />
