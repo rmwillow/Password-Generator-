@@ -4,6 +4,26 @@ var length = Number(prompt("How many characters will your password be? Enter a n
 
 //ask for character type
 var letterType = prompt("Enter a which character types: special, numeric, uppercase, lowercase.");
+
+//generate password 
+function generatePassword() {
+    //evaluate character type
+    // compare to each letter sets 
+
+    var letterSet = "";
+    var charTypeLower = letterType.toLowerCase();
+    if (letterTypeLower === "lowercase") {
+        letterSet = "abcdefghijklmnopqrstuvwxyz";
+    } else if (letterTypeLower === "uppercase") {
+        letterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    } else if (letterTypeLower === "numeric") {
+        letterSet = "0123456789";
+    } else if (letterTypeLower === "special") {
+        letterSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    }
+};
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
