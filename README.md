@@ -11,26 +11,29 @@
  <br />
  <br />
 
-
 ## 4 Options to make a more secure password.
 
 >  Special Characters
 <br />
+
 ![Special characters](https://user-images.githubusercontent.com/52016382/118540984-c9ef5180-b716-11eb-8ed3-e0bf24c981cd.png)
 <br />
 <br />
 > Numeric
 <br />
+
 ![Numeric](https://user-images.githubusercontent.com/52016382/118541028-d8d60400-b716-11eb-87c6-a61b026057a5.png)
 <br />
 <br />
 > Upper Case
 <br />
+
 ![Uppercase](https://user-images.githubusercontent.com/52016382/118541461-513cc500-b717-11eb-8cd4-5e73db58bd23.png)
 <br />
 <br />
 > Lower Case
 <br />
+
 ![Lowercase](https://user-images.githubusercontent.com/52016382/118541377-379b7d80-b717-11eb-97e0-10e5e77dc3b0.png)
 
 
@@ -52,4 +55,5 @@ _________________________________________________________________________
 <br />
 
 ![Generated Password](https://user-images.githubusercontent.com/52016382/118507700-17a69280-b6f4-11eb-83ed-a190056a733d.png)
+
 

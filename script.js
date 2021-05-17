@@ -15,6 +15,7 @@ while (!upperCase && !lowerCase && !numeric && !special) {
     lowerCase = confirm("Would you like to use lowercase letters?");
     numeric = confirm("Would you like to use numeric?");
     special = confirm("Would you like to use special characters?");
+
 };
 //generates password using rando link below
 //https://randojs.com/
